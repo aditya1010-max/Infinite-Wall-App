@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "npm run build --prefix client",
   "builds": [
     {
       "src": "client/package.json",
@@ -22,6 +23,5 @@
       "src": "/(.*)",
       "dest": "client/dist/$1"
     }
-  ],
-  "buildCommand": "npm run build --workspace=client"
+  ]
 }
